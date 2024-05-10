@@ -1,0 +1,125 @@
+/* First Page */
+.first-page {
+    margin-bottom: 50px;
+    /* display: flex; */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /* height: 50vh; */
+    /* position: relative; */
+}
+
+.first-page .container-shadow{
+    background-size: auto;
+    background-position: center bottom;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 50px;
+}
+
+.first-page .container-shadow .first-page-box{
+    background: url('./../images/logo.PNG') no-repeat;
+    background-size: auto;
+    background-position: center bottom;
+    height: 550px;
+    margin-bottom: 30px;
+    /* border: 2px solid red; */
+}
+
+.first-page .container-shadow .first-page-box .box-text{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.first-page .container-shadow .first-page-btn {
+    /* position: absolute; */
+    top: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    /* width: 350px; */
+    color: #331;
+    background-position: center bottom;
+    /* text-align: right; */
+    /* border: 2px solid red; */
+}
+
+/* Define styles for extracted text */
+#extractedTextContainer {
+    display: none; /* Initially hide the container */
+    margin-top: 20px;
+}
+
+#extractedText {
+    white-space: pre-wrap; /* Preserve line breaks */
+}
+
+.first-page-btn .report-btns {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    justify-content: center; 
+    align-items: center;
+}
+
+.first-page-btn .report-btns .report-btn-text{
+    justify-content: center; 
+    align-items: center;
+}
+
+.first-page-btn .btn {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+/* .first-page-btn .btn-upload {
+    margin-bottom: 10px;
+} */
+
+.first-page-btn .btn-analyse {
+    display: none; 
+    max-height: 550px; 
+    overflow-y: auto; 
+    padding: 20px; 
+    background-color: #f8f9fa; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 30px;
+} 
+
+.first-page-btn i {
+    margin-right: 10px;
+}
+
+input[type=file]{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+    width:100px;
+    background-color:var(--primary-color);
+    color:transparent;
+}
+
+/* Video */
+.video {
+    /* Subtract the height of the footer to make space for it */
+    padding-bottom: 100px; /* Adjust according to the footer height */
+    box-sizing: border-box;
+    overflow: auto; /* Enable scrolling if content overflows */
+}
+
+.video .video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video .video-preview {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 1000px;
+}

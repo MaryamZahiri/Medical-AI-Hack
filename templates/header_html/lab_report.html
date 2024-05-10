@@ -29,9 +29,58 @@
     <!-- Main Screen -->
     <div class="dashboard-screen">
         <div class="dashboard-content">
+            <!-- First Page Contents -->
+            <section class="first-page">
+                <div class="container-shadow">
+                    <div class="first-page-box" id="firstPageBox">
+                        <div class="box-text">Display Analyses:</div>
+                        <!-- <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo"> -->
+                    </div>
+                    <div class="first-page-btn">
+                        <!-- Display extracted text -->
+                        <!-- <div id="extractedTextContainer" class="btn-analyse" style="display: none; max-height: 550px; overflow-y: auto; padding: 20px; background-color: #f8f9fa; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); margin-bottom: 30px;"> -->
+                        <div id="extractedTextContainer" class="btn-analyse">
+                            <h2>Extracted Text:</h2>
+                            <pre id="extractedText" style="white-space: pre-wrap;"></pre>
+                            <p id="wordCount"></p>
+                        </div>
+        
+                        <form class="report-btns" id="uploadForm" action="{{url_for('upload')}}" method="post" enctype="multipart/form-data">
+                            <!-- <div class="report-btn-text" for="pdfFile">Choose a PDF file:</div> -->
+                            <div class="btn btn-primary">
+                                <!-- <label for="pdfFile"><i class="fas fa-laptop"></i>Choose a PDF file:</label><br> -->
+                                <i class="fas fa-laptop"></i><input type="file" id="pdfFile" name="pdfFile" accept=".pdf">
+                            </div>
+                            <div type="button" id="analyseButton" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i>Analyse</div>
+                        </form>
+                        <div id="jumpToVideoButton" class="btn btn-primary"><i class="fa-solid fa-user-doctor"></i>Talk to Assistant</div>
+                    </div>
+                </div>
+            </section>
+            <script src="static/js/first_page_action.js"></script>
             
+            <!-- Video Section -->
+            <section id="video-section" class="video background-black">
+                <div class="container-small">
+                    <h2 class="video-heading text-xl text-center">
+                        Watch the video and see how it works.
+                    </h2>
+                    <div class="video-content">
+                        <!-- Add a video element -->
+                        <video id="tutorialVideo" controls class="video-preview">
+                            <source src="static/videos/first.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <!-- Add a button to play the video -->
+                        <button id="playButton" class="btn btn-primary">Talk to assistant</button>
+                    </div>
+                </div>
+            </section>  
+            <script src="static/js/video_action.js"></script>
+                    
         </div>
     </div>
+
 
     <!-- Footer -->
     <med-ai-footer></med-ai-footer>
