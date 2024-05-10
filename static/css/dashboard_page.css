@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Creates two columns of equal width */
+    grid-template-rows: auto auto; /* Creates two rows */
+    justify-items: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

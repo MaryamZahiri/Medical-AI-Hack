@@ -7,6 +7,7 @@
 
     <!-- Include our css -->
     <link href="{{ url_for('static',filename='main_style.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ url_for('static',filename='css/dashboard_page.css') }}" rel="stylesheet" type="text/css"/>
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +28,24 @@
 
     <!-- Main Screen -->
     <div class="dashboard-screen">
-        <div class="dashboard-content"></div>
+        <div class="dashboard-content">
+            <div class="container">
+                <div class="image-grid">
+                    <div class="container-shadow">
+                        <h1>Medical Dashboard</h1>
+                    </div>
+                    <div class="image-container container-shadow">
+                        <img src="static/images/insulin.JPG" alt="Diagram 1">
+                    </div>
+                    <div class="image-container container-shadow">
+                        <img src="static/images/symp.JPG" alt="Diagram 2">
+                    </div>
+                    <div class="image-container container-shadow">
+                        <img src="static/images/calender.JPG" alt="Diagram 3">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
