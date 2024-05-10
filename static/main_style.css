@@ -3,3 +3,19 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --primary-color:#93C572;
+    --light-color: #f4f4f6;
+    --dark-color: #111;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
