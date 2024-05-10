@@ -7,6 +7,7 @@
 
     <!-- Include our css -->
     <link href="{{ url_for('static',filename='main_style.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ url_for('static',filename='css/symptom_page.css') }}" rel="stylesheet" type="text/css"/>
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,8 +28,100 @@
 
     <!-- Main Screen -->
     <div class="dashboard-screen">
-        <div class="dashboard-content"></div>
+        <div class="dashboard-content">
+            <section class="derma" id="myForm">
+                <div class="container-shadow">
+                    <h2>Add your symptoms here</h2>
+                    <form id="myForm" action="submit_here" method="post" class="form-grid">
+                        <div class="form-group">
+                            Who is the assessment for?
+                            <select name="Purpose of Contact" class="form-select">
+                                <option value="New Game Request">Myself</option>
+                                <option value="Reporting a Bug">Someone lese</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            Are you pregnant?
+                            <select name="Purpose of Contact" class="form-select">
+                                <option value="New Game Request">Yes</option>
+                                <option value="Reporting a Bug">No</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            Which symptom do you have?
+                            <select name="Purpose of Contact" class="form-select">
+                                <option value="New Game Request">loss of weight</option>
+                                <option value="Reporting a Bug">dry throat</option>
+                                <option value="Reporting a Bug">increased appetite</option>
+                                <option value="Reporting a Bug">frequent urination</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            For how long?
+                            <select name="Purpose of Contact" class="form-select">
+                                <option value="New Game Request">less than a day</option>
+                                <option value="Reporting a Bug">one dat to one week</option>
+                                <option value="Reporting a Bug">one week to one month</option>
+                                <option value="Reporting a Bug">one month to one year</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            How severe it is?
+                            <select name="Purpose of Contact" class="form-select">
+                                <option value="New Game Request">Mild</option>
+                                <option value="Reporting a Bug">Moderate</option>
+                                <option value="Reporting a Bug">Severe</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="form-button">Submit</button>
+                    </form>
+                </div>
+                    <p id="thankYouMessage"></p>
+                    <p id="thankYouMessage" style="display: none;">Your symptom tracker</p>
+
+                    <img src="static/images/symp.JPG" id="submittedImage" style="display: none;" alt="Submitted Image">
+            </section>
+        </div>
     </div>
+    <script src="static/js/symptom_form_action.js"></script>
+
+    <section class="derma" id="myForm2">
+        <div class="container-shadow">
+            <h2>Add your insulin information here</h2>
+            <form id="myForm" action="submit_here" method="post" class="form-grid">
+                <div class="form-group">
+                    What is the date?
+                    <input type="date" id="start" name="trip-start" value="2024-05-12" min="1900-01-01" max="2040-12-31" />
+                </div>
+                <div class="form-group">
+                    How much is the dose in mg/dl?
+                    <select name="Purpose of Contact" class="form-select">
+                        <option value="New Game Request"> less than 80 </option>
+                        <option value="New Game Request">80-100</option>
+                        <option value="Reporting a Bug">100-120</option>
+                        <option value="Reporting a Bug">120-140</option>
+                        <option value="Reporting a Bug"> more than 140</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    Was it short or rapid acting insulin?
+                    <select name="Purpose of Contact" class="form-select">
+                        <option value="New Game Request">Short</option>
+                        <option value="Reporting a Bug">Rapid acting</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="form-button">Submit</button>
+                        </form>
+                    </div>
+                    <p id="thankYouMessage2"></p>
+                    <p id="thankYouMessage2" style="display: none;">Your insulin tracker</p>
+                </div>
+                <img src="static/images/insulin.JPG" id="submittedImage2" style="display: none;" alt="Submitted Image">
+            </div>
+    </section>
+    <script src="static/js/symptom_form_action.js"></script>
 
     <!-- Footer -->
     <med-ai-footer></med-ai-footer>

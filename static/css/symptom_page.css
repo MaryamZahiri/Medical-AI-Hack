@@ -1,0 +1,84 @@
+
+.derma .container {
+    /* Allow the form container to take up remaining space */
+    /* flex: 1;  */
+    /* Adjust margin as needed */
+    /* margin-right: 20px; 
+    padding-left: 20px;
+    padding-right: 20px; */
+    /* max-width: 100%; */
+    /* Limit the width */
+    margin: 0 auto;
+    /* Center the form container */
+    margin-bottom: 130px;
+}
+
+.form-grid {
+    align-items: center;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    /* Increased spacing between form groups */
+    width: 600px;
+    margin: 25px auto;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    width: 90%;
+    padding: 12px 15px;
+    /* Increased padding for comfort */
+    margin-top: 8px;
+    border: 1px solid #176857;
+    border-radius: 15px;
+    /* More rounded corners */
+    transition: box-shadow 0.3s, border-color 0.3s;
+    /* Smooth transition for focus effect */
+    margin-bottom: 5px;
+}
+
+.form-select {
+    width: 95%;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* Subtle focus effect */
+    border-color: #888;
+    /* Slight border color change on focus */
+}
+
+.form-button {
+    background-color: #1c8383;
+    color: white;
+    padding: 15px 25px;
+    /* Increased padding for a larger button */
+    /* Increased margin for spacing */
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    /* More rounded corners for the button */
+    border-radius: 20px;
+    margin-left: 50%;
+    /* Margin left according to the parent */
+    transform: translateX(-50%);
+    /* translate according to the element's width */
+}
+
+.form-button:hover {
+    background-color: #c87f67;
+}
+
+.error {
+    color: red;
+}
+
+.form-image-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the start */
+}
