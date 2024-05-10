@@ -1,12 +1,14 @@
 .recipe-display {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 80px; /* Adjust the gap between articles */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
+    grid-template-rows: auto auto; /* Creates two rows */
+    gap: 20px; /* Adjusts the gap between grid items */
+    justify-items: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
 }
 
 article {
-    width: 20%; /* Adjust the width of articles to fit two in a row */
+    width: 60%; /* Adjust the width of articles to fit two in a row */
     border: 2px solid #8a4b08;
     border-radius: 10px;
     display: flex;
@@ -27,3 +29,33 @@ article p {
     padding: 10px;
     margin: 0;
 }
+
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .recipe-display {
+         grid-template-columns: repeat(2, 1fr); /* Keeps two columns for larger screens */
+         grid-template-rows: auto auto; /* Keeps two rows */
+     }
+ }
+ 
+ /* Example of placing items in the grid */
+ .recipe-display > article:nth-child(1) {
+     grid-column: 1 / 2; /* Places the first article in the first column */
+     grid-row: 1 / 2; /* Places the first article in the first row */
+ }
+ 
+ .recipe-display > article:nth-child(2) {
+     grid-column: 2 / 3; /* Places the second article in the second column */
+     grid-row: 1 / 2; /* Places the second article in the first row */
+ }
+ 
+ .recipe-display > article:nth-child(3) {
+     grid-column: 1 / 2; /* Places the third article in the first column */
+     grid-row: 2 / 3; /* Places the third article in the second row */
+ }
+ 
+ .recipe-display > article:nth-child(4) {
+     grid-column: 2 / 3; /* Places the fourth article in the second column */
+     grid-row: 2 / 3; /* Places the fourth article in the second row */
+ }
