@@ -7,7 +7,7 @@ from gpt_agent import gpt_agent
 
 app = Flask(__name__)
 
-# All headers
+########################## All headers ################################################
 @app.route('/')
 def main():
     return render_template('main.html')
@@ -36,7 +36,7 @@ def join():
 def chat_bot():
     return render_template('/header_html/chat_bot.html')
 
-# first page
+##################################### first page #########################################
 @app.route('/upload', methods=['POST'])
 def upload():
     if 'pdfFile' not in request.files:
