@@ -26,8 +26,25 @@
     <med-ai-header></med-ai-header>
 
     <!-- Main Screen -->
+    <script src="static/js/chat_bot_action.js"></script>
     <div class="dashboard-screen">
-        <div class="dashboard-content"></div>
+        <div class="dashboard-content">
+            <div class="chatbot-container">
+                
+                <div class="chatbot-icon" onclick="toggleChatbot()" data-state="closed"><i class="fa-solid fa-comment"></i></div>
+                <div class="chatbot-box" id="chatbotBox" style="display: none;">
+    
+                    <div id="chatbotResponse" class="chat-messages">
+                        <!-- Messages will be appended here -->
+                    </div>
+        
+                    <div class="container-shadow chat-input">
+                        <input type="text" id="userMessage" placeholder="Type your message...">
+                        <button onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
