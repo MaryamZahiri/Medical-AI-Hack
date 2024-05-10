@@ -1,0 +1,29 @@
+.recipe-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px; /* Adjust the gap between articles */
+}
+
+article {
+    width: 20%; /* Adjust the width of articles to fit two in a row */
+    border: 2px solid #8a4b08;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+article img {
+    max-width: 100%; /* Ensure images fit within articles */
+    border-radius: 10px 10px 0 0; /* Add border radius to top corners */
+}
+
+article p {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}

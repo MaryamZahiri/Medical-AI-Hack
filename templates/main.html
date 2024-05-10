@@ -7,6 +7,7 @@
 
     <!-- Include our css -->
     <link href="{{ url_for('static',filename='main_style.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ url_for('static',filename='css/main_page.css') }}" rel="stylesheet" type="text/css"/>
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +27,40 @@
     <med-ai-header></med-ai-header>
 
     <!-- Main Screen -->
+    <div class="dashboard-screen">
+        <div class="dashboard-content container-shadow">
+            <section class="recipe-display">
+                <article>
+                <a href="/labReport">
+                    <img src="static/images/lab.JPG">
+                    <p>Lab Report Assistant</p>
+                </a>
+    
+                </article>
+                <article>
+                    <a href="/moveMentor">
+                        <img src="static/images/movee.JPG">
+                        <p>Calories Tracker</p>
+                    </a>
+    
+                </article>
+                <article>
+                    <a href="/derma">
+                        <img src="static/images/lab.JPG">
+                        <p>AI Symptom Tracker</p>
+                    </a>
+    
+                </article>
+                <article>
+                    <a href="/therapist">
+                        <img src="static/images/movee.JPG">
+                        <p>AI therapist</p>
+                    </a>
+    
+                </article>
+            </section>
+        </div>
+    </div>
 
     <!-- Footer -->
     <med-ai-footer></med-ai-footer>
