@@ -38,6 +38,17 @@
             </section>
             <script src="static/js/first_page_action.js"></script>
 
+            <section class="media-container">
+                <img id="videoElementId" src="{{ url_for('video_feed_seam') }}" width="400" height="200"/>
+                <!-- Control Buttons -->
+                <div class="control">
+                  <!-- Upload Video -->
+                  <form action="{{url_for('upload_seam')}}" method="post" enctype="multipart/form-data">
+                      <input id="playButton" class="remote-button1" type="file" name="video" accept=".mp4">
+                      <input id="playButton" class="remote-button2" type="submit" value="Calories Counter">
+              
+                  </form>
+
             <!-- Video Section -->
             <section id="video-section" class="video background-black">
                 <div class="container-small">

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questionnaire</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Please fill out the questionnaire:</h2>
+        <form method="post">
+            <label for="occupation">Occupation:</label><br>
+            <select id="occupation" name="occupation">
+                {% for occupation in occupations %}
+                    <option value="{{ occupation }}">{{ occupation }}</option>
+                {% endfor %}
+            </select><br><br>
+
+            <label for="age">Age:</label><br>
+            <select id="age" name="age">
+                {% for age_range in age_ranges %}
+                    <option value="{{ age_range }}">{{ age_range }}</option>
+                {% endfor %}
+            </select><br><br>
+
+            <label for="interest">Are you interested in our app?</label><br>
+            <select id="interest" name="interest">
+                {% for option in interest_options %}
+                    <option value="{{ option }}">{{ option }}</option>
+                {% endfor %}
+            </select><br><br>
+
+            <label for="payment">How much would you pay per month?</label><br>
+            <select id="payment" name="payment">
+                <option value="0">0 CAD</option>
+                <option value="1-10">1-10 CAD</option>
+                <option value="11-100">11-100 CAD</option>
+                <option value="<100">&lt;100 CAD</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
