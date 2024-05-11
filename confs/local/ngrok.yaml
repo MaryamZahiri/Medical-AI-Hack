@@ -1,0 +1,9 @@
+authtoken: 2Gucg5HNCQnw5UIhPCFyWwK1T0F_7rAKWs45uD65CDrq1wZM9
+version: 2
+tunnels:
+  website:
+    proto: http
+    addr: 8000
+  form:
+    proto: http
+    addr: 3001
