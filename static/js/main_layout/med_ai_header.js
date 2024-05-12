@@ -192,15 +192,15 @@ med_ai_header_template.innerHTML = `
             </div>
             <div class="main-menu">
                 <ul class="tab-header">
-                    <li><a href="/lab-report"">Lab Report</a></li>
+                    <li><a href="/lab-report">Lab Report</a></li>
                     <li><a href="/calories-tracker">Calories Tracker</a></li>
                     <li><a href="/symptom-tracker">AI Symptom Tracker</a></li>
                     <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/testimonial">Testimonials</a></li>
                     <li><a href="join">Join us</a></li>
-                    <li><a class="btn" href="/chat-bot">
-                        <!-- i tag icon -->
+                    <!-- <li><a class="btn" href="/chat-bot">
                         <i class="fas fa-user"></i> Chat Bot
-                    </a></li>
+                    </a></li> -->
                 </ul>
             </div>
 

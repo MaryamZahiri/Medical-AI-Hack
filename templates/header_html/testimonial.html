@@ -34,39 +34,19 @@
                 Look at the success stories from bussinesses just like us.
             </h3>
             <div class="testimonial-grid">
-                <div class="card">
-                    <p>
-                        What
-                    </p>
-                    <p>
-                        Who
-                    </p>
-                    <p>
-                        Where
-                    </p>
-                </div>
-                <div class="card">
-                    <p>
-                        What
-                    </p>
-                    <p>
-                        Who
-                    </p>
-                    <p>
-                        Where
-                    </p>
-                </div>
-                <div class="card">
-                    <p>
-                        What
-                    </p>
-                    <p>
-                        Who
-                    </p>
-                    <p>
-                        Where
-                    </p>
-                </div>
+                <!-- <section class="testimonials"> -->
+                    <!-- <div class="container"> -->
+                        <!-- <div class="testimonial-grid"> -->
+                            {% for testimonial in testimonials %}
+                                <div class="card">
+                                    <p>{{ testimonial }}</p>
+                                    <p><strong>{{ testimonial.name }}</strong></p>
+                                    <!-- <p><em>{{ testimonial.location }}</em></p> -->
+                                </div>
+                            {% endfor %}
+                        <!-- </div>
+                    </div> -->
+                <!-- </section> -->
             </div>
         </div>
     </section>

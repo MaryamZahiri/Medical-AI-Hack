@@ -8,6 +8,7 @@ import mediapipe as mp
 import time
 import cv2
 import os
+import json
 
 app = Flask(__name__)
 
@@ -174,9 +175,19 @@ def dashboard():
 def join():
     return render_template('/header_html/join.html')
 
-@app.route('/chat-bot')
-def chat_bot():
-    return render_template('/header_html/chat_bot.html')
+# @app.route('/chat-bot')
+# def chat_bot():
+#     return render_template('/header_html/chat_bot.html')
+
+# @app.route('/testimonial')
+# def chat_bot():
+#     return render_template('/header_html/testimonial.html')
+
+@app.route('/testimonial')
+def testimonial():
+    with open('static/testimonials.json', 'r') as f:
+        testimonials = json.load(f)
+    return render_template('header_html/testimonial.html', testimonials=testimonials)
 
 ##################################### first page #########################################
 @app.route('/upload', methods=['POST'])

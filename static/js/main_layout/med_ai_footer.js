@@ -162,7 +162,7 @@ med_ai_footer_template.innerHTML = `
                 <div>
                     <h4>Contact</h4>
                     <ul>
-                        <li><a href="#">med@hack.com</a></li>
+                        <li><a href="#">medai.com</a></li>
                     </ul>
                 </div>
             </div>
