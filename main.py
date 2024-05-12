@@ -7,6 +7,8 @@ from gpt_agent import gpt_agent
 import mediapipe as mp
 import time
 import cv2
+import os
+
 app = Flask(__name__)
 
 
@@ -145,7 +147,7 @@ def upload_seam():
         file_path = os.path.join('static/videos', filename)
         file.save(file_path)
         last_uploaded_video_path_seam = file_path
-        return render_template('moveMentor.html', video_name=filename)
+        return render_template('header_html/calories_tracker.html', video_name=filename)
     return "Invalid file type"
 
 
