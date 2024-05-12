@@ -29,44 +29,67 @@
     <!-- Main Screen -->
     <div class="dashboard-screen">
         <div class="dashboard-content">
-            <section class="first-page">
-                <div class="container-shadow">
-                    <div class="first-page-btn">
-                        <div id="jumpToVideoButton" class="btn btn-primary"><i class="fa-solid fa-user-doctor"></i>Talk to Assistant</div>
-                    </div>
-                </div>
-            </section>
-            <script src="static/js/first_page_action.js"></script>
+            
+        <section class="first-page">
+            <div class="container-shadow">
+                <h2 class="video-heading text-xl text-center">
+                    Upload your video to track your calories.
+                </h2>
+            </div>
+        </section>
 
-            <section class="media-container">
-                <img id="videoElementId" src="{{ url_for('video_feed_seam') }}" width="400" height="200"/>
-                <!-- Control Buttons -->
-                <div class="control">
-                  <!-- Upload Video -->
-                  <form action="{{url_for('upload_seam')}}" method="post" enctype="multipart/form-data">
-                      <input id="playButton1" class="remote-button1" type="file" name="video" accept=".mp4">
-                      <input id="playButton" class="remote-button2" type="submit" value="Calories Counter">
-              
-                  </form>
+        <section id="video-section" class="video">
+            <div class="container-shadow">
+                <div class="video-content">
+                    <img id="videoElementId" src="{{ url_for('video_feed_seam') }}" width="400" height="200"/>
 
-            <!-- Video Section -->
-            <section id="video-section" class="video background-black">
-                <div class="container-small">
-                    <h2 class="video-heading text-xl text-center">
-                        Watch the video and see how it works.
-                    </h2>
-                    <div class="video-content">
-                        <!-- Add a video element -->
-                        <video id="tutorialVideo" controls class="video-preview">
-                            <source src="../static/videos/second.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <!-- Add a button to play the video -->
-                        <button id="playButton" class="btn btn-primary">Talk to assistant</button>
-                    </div>
+                    <!-- Upload Video -->
+                    <form action="{{url_for('upload_seam')}}" method="post" enctype="multipart/form-data">
+                        <div class="calorie_buttons">
+                            <div class="btn btn-primary">
+                                <input type="file" name="video" accept=".mp4">
+                            </div>
+                            <div class="btn btn-primary">
+                                <input type="submit" value="Calories Counter">
+                            </div>
+                        </div>
+                        
+                    </form>
+
+                    <!-- Control Buttons -->
+                    <!-- <div class="control"> -->
+                    <!-- </div> -->
                 </div>
-            </section>
-            <script src="static/js/video_action.js"></script>
+            </div>
+        </section>
+
+        <section class="first-page">
+            <div class="container-shadow">
+                <div class="first-page-btn">
+                    <div id="jumpToVideoButton" class="btn btn-primary"><i class="fa-solid fa-user-doctor"></i>Talk to Assistant</div>
+                </div>
+            </div>
+        </section>
+        <script src="static/js/first_page_action.js"></script>
+
+        <!-- Video Section -->
+        <section id="video-section" class="video background-black">
+            <div class="container-small">
+                <h2 class="video-heading text-xl text-center">
+                    Watch the video and see how it works.
+                </h2>
+                <div class="video-content">
+                    <!-- Add a video element -->
+                    <video id="tutorialVideo" controls class="video-preview">
+                        <source src="../static/videos/second.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <!-- Add a button to play the video -->
+                    <button id="playButton" class="btn btn-primary">Talk to assistant</button>
+                </div>
+            </div>
+        </section>
+        <script src="static/js/video_action.js"></script>
         </div>
     </div>
 
