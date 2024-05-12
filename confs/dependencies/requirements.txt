@@ -1,0 +1,8 @@
+PyPDF2
+mediapipe
+couchbase
+flask
+openai
+python-dotenv
+mediapipe
+opencv-python
