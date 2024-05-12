@@ -6,6 +6,7 @@ services:
       context: .
       dockerfile: confs/local/Dockerfile
     ports:
-      - '8000:8080'
+      - '8000:8000'
     command: python main.py
-    
+    expose:
+      - 8000
