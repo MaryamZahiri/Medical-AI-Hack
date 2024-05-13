@@ -10,3 +10,7 @@ services:
     command: python main.py
     expose:
       - 8000
+
+    volumes:
+        - .:/usr/src/app/staticfiles
+    
