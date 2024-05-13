@@ -35,7 +35,7 @@ services:
   acme-companion:
     image: nginxproxy/acme-companion
     env_file:
-      - confs/dev/.env.dev
+      - confs/local/.env.local
     volumes:
       - static_volume:/usr/src/app/staticfiles
       - /var/run/docker.sock:/var/run/docker.sock:ro
