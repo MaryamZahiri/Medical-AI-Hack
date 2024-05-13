@@ -27,7 +27,7 @@ We faced challenges finding accessible locations for collaborative work. And con
 - Advancing our project into a commercial venture to empower more individuals to prioritize health and wealth.
 - 
 ## Special Thanks To:
-Beeloud, ICP,  CouchBase
+Beeloud, ICP, CouchBase, Nexus
 
 pip install mediapipe
 pip install couchbase
