@@ -14,3 +14,41 @@ services:
     volumes:
         - .:/usr/src/app/staticfiles
     
+  nginx-proxy:
+    container_name: nginx-proxy
+    build:
+      context: .
+      dockerfile: confs/local/nginx/Dockerfile
+    restart: always
+    ports:
+      - 443:443
+      - 80:80
+    volumes:
+      - static_volume:/usr/src/app/staticfiles
+      - certs:/etc/nginx/certs
+      - html:/usr/share/nginx/html
+      - vhost:/etc/nginx/vhost.d
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+    depends_on:
+      - web
+
+  acme-companion:
+    image: nginxproxy/acme-companion
+    env_file:
+      - confs/dev/.env.dev
+    volumes:
+      - static_volume:/usr/src/app/staticfiles
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - certs:/etc/nginx/certs
+      - html:/usr/share/nginx/html
+      - vhost:/etc/nginx/vhost.d
+      - acme:/etc/acme.sh
+    depends_on:
+      - nginx-proxy
+
+volumes:
+  static_volume:
+  certs:
+  html:
+  vhost:
+  acme:
