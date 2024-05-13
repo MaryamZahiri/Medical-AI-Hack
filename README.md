@@ -1,6 +1,8 @@
 # Medical-AI-Hack
 AI Analyzer, AI Agent, AI Chat Bot, ICP, Health Tracker
 
+![WhatsApp Image 2024-05-12 at 1 48 24 PM](https://github.com/MaryamZahiri/Medical-AI-Hack/assets/22878490/0331c67f-88de-4f32-969f-73d53faf490e)
+
 ## Inspiration
 My journey from being unhealthy to embracing wellness inspired the creation of this project. I realized the importance of health amidst a busy lifestyle filled with work commitments and neglecting personal well-being. This realization motivated me to develop a solution that could help individuals like me prioritize their health even in demanding circumstances.
 
