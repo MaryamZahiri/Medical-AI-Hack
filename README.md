@@ -29,5 +29,34 @@ We faced challenges finding accessible locations for collaborative work. And con
 ## Special Thanks To:
 Beeloud, ICP, CouchBase, Nexus
 
+## Installations
+```python 
+# On terminal, install
+pip install flask
+pip install PyMuPDF
+pip install --upgrade watchdog
+
+pip install openai
+pip install PyPDF2
+pip install python-dotenv
+
 pip install mediapipe
 pip install couchbase
+```
+
+## How to Run in terminal:
+```python
+python main.py
+```
+## ICP Docs
+### Install dfx, wsl
+### First Bootcamp
+![Motoko Playground](https://m7sm4-2iaaa-aaaab-qabra-cai.raw.ic0.app/)
+![Azle](https://demergent-labs.github.io/azle/)
+![Kybra](https://demergent-labs.github.io/kybra/the_kybra_book.html)
+![Get started ICP](https://internetcomputer.org/docs/current/developer-docs/getting-started/overview-of-icp)
+![Installation tools ICP](https://internetcomputer.org/docs/current/developer-docs/getting-started/install/)
+### Second Bootcamp
+![Dao lessons](https://nnri3-7qaaa-aaaaj-qa3qa-cai.icp0.io/)
+![Intro to dfx](https://internetcomputer.org/docs/current/tutorials/developer-journey/level-0/intro-dfx)
+In ICP developer docs, search for "basic doa" and "hashmap" 
