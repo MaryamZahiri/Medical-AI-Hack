@@ -9,6 +9,9 @@
 [Get started ICP](https://internetcomputer.org/docs/current/developer-docs/getting-started/overview-of-icp)
 
 #### Install dfx, wsl
+- Powersell: Ubuntu -> username, password
+- Vs code: ctrl,shift,P -> wsl 
+- Docker: install and extension
 [Installation tools ICP](https://internetcomputer.org/docs/current/developer-docs/getting-started/install/)
 
 ### Second Bootcamp
