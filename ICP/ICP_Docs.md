@@ -21,3 +21,6 @@
 [Intro to dfx](https://internetcomputer.org/docs/current/tutorials/developer-journey/level-0/intro-dfx)
 
 In ICP developer docs, search for "basic doa" and "hashmap" 
+
+### Bootcamp
+[Stable Memory](https://internetcomputer.org/docs/current/motoko/main/stable-memory/stablememory)
