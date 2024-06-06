@@ -29,6 +29,6 @@ In ICP developer docs, search for "basic doa" and "hashmap"
 
 [Doa](https://nns.ic0.app/)
 
-[AI Channel][https://dacade.org/communities/icp/challenges/b549466d-5ff5-5f4c-b66b-52f2899309b5]
+[AI Channel](https://dacade.org/communities/icp/challenges/b549466d-5ff5-5f4c-b66b-52f2899309b5)
 
 [ICP Developer](https://www.youtube.com/playlist?list=PLuhDt1vhGcrdR2h6nPNylXKS4u8L-efvD)
