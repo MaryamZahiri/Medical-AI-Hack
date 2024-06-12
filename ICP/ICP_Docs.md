@@ -21,3 +21,14 @@
 [Intro to dfx](https://internetcomputer.org/docs/current/tutorials/developer-journey/level-0/intro-dfx)
 
 In ICP developer docs, search for "basic doa" and "hashmap" 
+
+### Voting App Bootcamp
+[Stable Memory](https://internetcomputer.org/docs/current/motoko/main/stable-memory/stablememory)
+
+[rwas](https://blog.chain.link/real-world-assets-rwas-explained/)
+
+[Doa](https://nns.ic0.app/)
+
+[AI Channel](https://dacade.org/communities/icp/challenges/b549466d-5ff5-5f4c-b66b-52f2899309b5)
+
+[ICP Developer](https://www.youtube.com/playlist?list=PLuhDt1vhGcrdR2h6nPNylXKS4u8L-efvD)
