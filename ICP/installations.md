@@ -86,10 +86,6 @@ dfx identity list
 dfx identity new MedAI --network ic
 <!-- passphrase: -->
 ```
-```
-55A7B-5A44C-5E45B
-Worked: A9A75-A9DFA-C54FD
-Failed: FBAFE-7F598-5D476
-```
+
 https://internetcomputer.org/docs/current/developer-docs/ai/ai-on-chain
 https://github.com/WebAssembly/wasi-sdk/tree/wasi-sdk-21
